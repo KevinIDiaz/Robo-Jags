@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  scrollbar-color: #011638 black;
+  scrollbar-width: thin;
+}
+
+#container {
+  overflow-x: hidden;
+}

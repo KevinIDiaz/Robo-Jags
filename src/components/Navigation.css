@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#navbar {
+  width: 100vw;
+  /*background-color: #011638;*/
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  height: 20%;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  transition: background-color, 0.5s;
+}
+
+#logo {
+  height: 150px;
+  margin-top: 10px;
+  transition: all, 0.5s;
+}
+
+button {
+  background-color: rgb(0, 0, 0, 0);
+  color: #eff0f2;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  border-width: 0px;
+  transition: all, 0.25s;
+  padding: 10px;
+  border-color: rgb(0, 0, 0, 0);
+  border-width: 1px;
+  border-radius: 5px;
+  border: solid;
+  border-color: transparent;
+  letter-spacing: 5px;
+}
+button:hover {
+  cursor: pointer;
+  border-color: #eff0f2;
+}
+
+.emphasize {
+  color: #f9d459;
+}
+.emphasize:hover {
+  color: #d7a605;
+  border-color: #d7a605;
+}

@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#banner {
+  height: 95vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0), black);
+  overflow: hidden;
+}
+#overlay {
+  z-index: 1;
+  background-image: linear-gradient(
+    60deg,
+    black,
+    40%,
+    rgb(0, 0, 0, 0),
+    70%,
+    #011638
+  );
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+  top: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#video {
+  z-index: 0;
+}
+#video-container {
+  height: 95vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+
+#intro {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#group-pic {
+  width: 75%;
+
+  border-radius: 10px;
+  border: 3px solid #f9d459;
+}
+
+#group-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: radial-gradient(#937103, black);
+  padding: 10px;
+}
+
+#intro p {
+  width: 75%;
+}
+
+#intro button {
+  margin-bottom: 30px;
+}
+
+#highlights {
+  background-color: #937103;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.symbol {
+  width: 200px;
+}
+
+#achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20%;
+}
+
+#sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #010c1e;
+}
+
+#highlights h2 {
+  text-decoration: 2px underline;
+}
+
+#harley {
+  width: 50%;
+  margin: 40px;
+}
+
+.button {
+  color: #f9d459;
+  border-color: #f9d459;
+  transition: all, 0.25s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #011638;
+  border-color: transparent;
+  color: #eff0f2;
+}
