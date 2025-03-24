@@ -59,3 +59,6 @@ ul {
   font-style: normal;
   font-size: 15px;
 }
+button:hover {
+  transform: scale(1.06);
+}

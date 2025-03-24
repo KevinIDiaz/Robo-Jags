@@ -1,0 +1,89 @@
+#about-banner {
+  height: 50vh;
+  width: 100vw;
+  background-image: url(groupPic.PNG),
+    linear-gradient(to bottom right, rgba(0, 0, 0, 0), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-banner h1 {
+  font-size: 100px;
+  text-shadow: 5px 7px #f9d459;
+  -webkit-text-stroke: 5px black;
+  transform: translateY(30%);
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#our-story,
+#our-mission {
+  background-color: black;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+#meet-teams {
+  background-color: #937103;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+#teams-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.team-card {
+  background-color: #010c1e;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.team-card h3 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.team-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #f9d459;
+}
+
+.button {
+  color: #f9d459;
+  border-color: #f9d459;
+  transition: all 0.25s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #011638;
+  border-color: transparent;
+  color: #eff0f2;
+}
+
+#vid-intro {
+  background-color: #010c1e;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#vid-intro video {
+  width: 70%;
+}
+hr {
+  height: 5px;
+  background-color: #010c1e;
+  border-style: hidden;
+}
