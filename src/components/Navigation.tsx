@@ -21,6 +21,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     const navbar = document.getElementById("navbar");
     const logo = document.getElementById("logo");
+    if (!navbar || !logo) return; // Exit function if navbar or logo is null
     if (window.scrollY > 40) {  // 'scrollY' is more reliable than 'scrollTop'
         navbar.style.backgroundColor = "#011638";
         navbar.style.height = '13%';
