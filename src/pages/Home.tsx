@@ -75,7 +75,6 @@ export function Home(){
                 infinite={true} 
                 autoPlay={true} 
                 showDots={true} 
-                removeArrowOnDeviceType={[ "mobile"]} 
                 centerMode={ true}
                 pauseOnHover={true}
                 renderButtonGroupOutside={true}
