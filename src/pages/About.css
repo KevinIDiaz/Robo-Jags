@@ -88,3 +88,15 @@ hr {
   background-color: #010c1e;
   border-style: hidden;
 }
+
+@media screen and (max-width: 1080px) {
+  #about-banner h1 {
+    font-size: 85px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #about-banner h1 {
+    font-size: 75px;
+    padding-top: 15px;
+  }
+}
