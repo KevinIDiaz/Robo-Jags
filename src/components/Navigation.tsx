@@ -42,7 +42,7 @@ function scrollFunction() {
     } else {
         navbar.style.backgroundColor = "transparent";
         navbar.style.height = '20%';
-        logo.style.height = '150px';
+        logo.style.height = '125px';
         
     }
    
