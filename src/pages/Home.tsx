@@ -81,7 +81,7 @@ export function Home(){
                 focusOnSelect={true}
                 >
                     <div className="card"><img src={harley}/></div>
-                    <div className="card"><img src={Mc}/><p>- Rosa and Alexa -</p></div>
+                    <div className="card"><a target="blank" href='https://maps.app.goo.gl/P9mcbExTV5oaYYFu7'><img src={Mc}/></a><p>- Rosa and Alexa -</p></div>
                     <div className="card"><img src={chick}/></div>
                     <div className="card"><img src={canes}/></div>
                 </Carousel>
