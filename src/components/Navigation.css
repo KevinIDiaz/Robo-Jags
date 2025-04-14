@@ -52,3 +52,62 @@ button:hover {
   color: #d7a605;
   border-color: #d7a605;
 }
+
+#menu {
+  border-style: solid;
+  border-width: 2px;
+  transition: all 0.4s;
+  border-color: rgb(0, 0, 0, 0);
+  border-radius: 5px;
+  position: absolute;
+  right: 35px;
+  height: 40%;
+  visibility: hidden;
+}
+
+#menu:hover {
+  cursor: pointer;
+  border-color: black;
+  box-shadow: 2px 2px 0px black;
+}
+
+#close {
+  border-style: solid;
+  border-width: 2px;
+  transition: all 0.4s;
+  border-color: rgb(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+#close:hover {
+  cursor: pointer;
+  border-color: black;
+  box-shadow: 2px 2px 0px black;
+  background-color: #aedcae;
+}
+
+#side {
+  right: 0;
+  width: 250px;
+  background-color: #bee3ba;
+  position: fixed;
+  z-index: 100000;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s;
+  visibility: hidden;
+  transform: translate(100%);
+  box-shadow: 10px 7px 10px rgb(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 1px;
+}
+@media screen and (max-width: 725px) {
+  #navbar button {
+    visibility: hidden;
+  }
+  #menu {
+    visibility: visible;
+  }
+}

@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import harley from '../assets/harleyDavidson.png'
 import group from '../assets/groupPic.jpeg'
 import Mc from '../assets/McD.png'
+import canes from '../assets/canes.jpg'
+import chick from '../assets/chick.jpg'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -66,6 +68,7 @@ export function Home(){
             </div>
             <div id='sponsors'>
                 <h2>SPONSORS</h2>
+                <h3>Thank You!!!</h3>
                 <Carousel 
                 containerClass="carousel-container" 
                 responsive={responsive} 
@@ -73,17 +76,15 @@ export function Home(){
                 autoPlay={true} 
                 showDots={true} 
                 removeArrowOnDeviceType={[ "mobile"]} 
-                centerMode={ window.outerWidth<500?true:false}
+                centerMode={ true}
                 pauseOnHover={true}
                 renderButtonGroupOutside={true}
                 focusOnSelect={true}
                 >
-                    <div><img src={harley}/></div>
-                    <div><img src={Mc}/></div>
-                    <div><img src={harley}/></div>
-                    <div><img src={Mc}/></div>
-                    <div><img src={harley}/></div>
-                    <div><img src={Mc}/></div>
+                    <div className="card"><img src={harley}/></div>
+                    <div className="card"><img src={Mc}/><p>- Rosa and Alexa -</p></div>
+                    <div className="card"><img src={chick}/></div>
+                    <div className="card"><img src={canes}/></div>
                 </Carousel>
             </div>
         </div>

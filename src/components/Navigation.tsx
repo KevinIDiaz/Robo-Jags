@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Navigation.css"
 import logo from "/Robojags Logo.png"
+import menu from '../assets/menu.svg'
 
 export function Navigation(){
     return(
+        <>
         <div id='navbar'>
        
            <button >CONTACT</button>
@@ -12,8 +14,13 @@ export function Navigation(){
        
             <Link to="/About"><button>ABOUT</button></Link>
             <button className='emphasize'>SPONSORS</button>
+            <img onClick={showSide} id='menu'src={menu}/>
         
         </div>
+        <div id='side'>
+            <img onClick={hideSide} id='close' src={menu}/>
+        </div>
+        </>
     )
     
 }
@@ -34,4 +41,17 @@ function scrollFunction() {
         
     }
    
+    }
+    
+    function showSide(){
+        const side = document.getElementById('side');
+        if (!side) return;
+        side.style.transform='translateX(0%)';
+    }
+    
+    function hideSide(){
+        const side = document.getElementById('side');
+        if (!side) return;
+        side.style.transform='translateX(100%)';
+        
     }
