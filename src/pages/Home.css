@@ -30,6 +30,7 @@
 }
 #video {
   z-index: 0;
+  transform: translateX(calc((100% - 100vw) / -2));
 }
 #video-container {
   height: 95vh;
