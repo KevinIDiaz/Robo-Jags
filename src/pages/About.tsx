@@ -45,12 +45,13 @@ export function About() {
                         { number: "70738V" }
                     ].map((team, index) => (
                         <div key={index} className="team-card">
-                            <img src={`/teams/${team.number}.jpg`} alt={`Team ${team.number}`} className="team-img"/>
+                            <img src={`/Robo-Jags/${team.number}.jpg`} alt={`Team ${team.number}`} className="team-img"/>
                             <h3>{team.name ? `${team.name} (${team.number})` : team.number}</h3>
                             <Link to={`/teams/${team.number}`}>
                                 <button className="button">LEARN MORE</button>
                             </Link>
                         </div>
+                        
                     ))}
                 </div>
             </div>
