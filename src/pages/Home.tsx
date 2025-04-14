@@ -73,7 +73,7 @@ export function Home(){
                 autoPlay={true} 
                 showDots={true} 
                 removeArrowOnDeviceType={[ "mobile"]} 
-                centerMode={ true}
+                centerMode={ window.innerWidth<500?true:false}
                 pauseOnHover={true}
                 renderButtonGroupOutside={true}
                 focusOnSelect={true}
