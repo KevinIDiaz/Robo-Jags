@@ -134,7 +134,16 @@
   width: 100%;
   height: 10%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+  #overlay h1 {
+    font-size: 125px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -142,6 +151,14 @@
     height: 225px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  #overlay h1 {
+    font-size: 115px;
+    padding-top: 50px;
+  }
+}
+
 @media screen and (max-width: 725px) {
   #sponsors img {
     height: 175px;
