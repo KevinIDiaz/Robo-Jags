@@ -87,4 +87,7 @@
   #footer {
     flex-direction: column;
   }
+  #vex-logo {
+    margin-bottom: 30px;
+  }
 }
