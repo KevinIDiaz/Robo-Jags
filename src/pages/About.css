@@ -96,7 +96,7 @@ hr {
 }
 @media screen and (max-width: 900px) {
   #about-banner h1 {
-    font-size: 75px;
+    font-size: 65px;
     padding-top: 15px;
   }
 }
