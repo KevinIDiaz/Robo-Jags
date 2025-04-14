@@ -1,11 +1,12 @@
 #about-banner {
   height: 50vh;
   width: 100vw;
-  background-image: url(groupPic.PNG),
+  background-image: url("../assets/groupPic.jpeg"),
     linear-gradient(to bottom right, rgba(0, 0, 0, 0), black);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center;
 }
 
 #about-banner h1 {

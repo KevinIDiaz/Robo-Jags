@@ -3,9 +3,32 @@ import video from "/roboJagBannerTest.mp4"
 import team from '/teamSymbol.svg'
 import award from '/awardSymbol.svg'
 import { Link } from "react-router-dom";
-import group from '../assets/groupPic.PNG'
+import harley from '../assets/harleyDavidson.png'
+import group from '../assets/groupPic.jpeg'
+import Mc from '../assets/McD.png'
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 export function Home(){
+    const responsive = {
+        desktop: {
+          breakpoint: { max: 3000, min: 1367 },
+          items: 3,
+          partialVisibilityGutter: 40
+        },
+        tablet: {
+          breakpoint: { max: 1366, min: 501 },
+          items: 2,
+          partialVisibilityGutter: 30
+        },
+        mobile: {
+          breakpoint: { max: 500, min: 0 },
+          items: 1,
+          partialVisibilityGutter: 30
+        }
+      };
+      
     return(
         <div >
             <div id='banner'>
@@ -20,7 +43,7 @@ export function Home(){
             
             <div id='intro'>
                 <h2>HELLO!</h2>
-                <div id='group-container'><img id='group-pic'src="/images/groupPic.PNG" alt="Group Picture"/></div>
+                <div id='group-container'><img id='group-pic'src={group} alt="Group Picture"/></div>
                 
                 <p>At Blanson CTE High School, our robotics club is more than just building robots – it's about crafting future innovators, problem-solvers, and leaders. Comprised of six competitive VEX teams, we work together to design, build, and program robots that push the boundaries of creativity and engineering. With a passion for technology and a drive for excellence, our teams compete at local, regional, and national levels, consistently aiming for the highest performance. Whether we’re brainstorming new strategies, troubleshooting robot designs, or celebrating victories, every moment reflects our dedication to learning, collaboration, and growth. We believe that through robotics, we not only shape the future of technology but also build friendships and skills that last a lifetime.</p>
                 <Link to='/About'><button className='button'>LEARN MORE!</button></Link>            
@@ -43,7 +66,25 @@ export function Home(){
             </div>
             <div id='sponsors'>
                 <h2>SPONSOR</h2>
-                <img src='/harleyDavidson.png' id='harley'/>
+                <Carousel 
+                containerClass="carousel-container" 
+                responsive={responsive} 
+                infinite={true} 
+                autoPlay={true} 
+                showDots={true} 
+                removeArrowOnDeviceType={[ "mobile"]} 
+                centerMode={ true}
+                pauseOnHover={true}
+                renderButtonGroupOutside={true}
+                focusOnSelect={true}
+                >
+                    <div><img src={harley}/></div>
+                    <div><img src={Mc}/></div>
+                    <div><img src={harley}/></div>
+                    <div><img src={Mc}/></div>
+                    <div><img src={harley}/></div>
+                    <div><img src={Mc}/></div>
+                </Carousel>
             </div>
         </div>
     )
