@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Navigation.css"
 import logo from "/Robojags Logo.png"
 import menu from '../assets/menu.svg'
+import close from '../assets/close.svg'
 
 export function Navigation(){
     return(
@@ -18,7 +19,11 @@ export function Navigation(){
         
         </div>
         <div id='side'>
-            <img onClick={hideSide} id='close' src={menu}/>
+            <img onClick={hideSide} id='close' src={close}/>
+            <button >CONTACT</button>
+           <button>GALLERY</button>
+            <Link to="/About"><button>ABOUT</button></Link>
+            <button className='emphasize'>SPONSORS</button>
         </div>
         </>
     )

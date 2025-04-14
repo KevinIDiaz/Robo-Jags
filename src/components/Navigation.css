@@ -67,8 +67,7 @@ button:hover {
 
 #menu:hover {
   cursor: pointer;
-  border-color: black;
-  box-shadow: 2px 2px 0px black;
+  border-color: #eff0f2;
 }
 
 #close {
@@ -77,37 +76,49 @@ button:hover {
   transition: all 0.4s;
   border-color: rgb(0, 0, 0, 0);
   border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: 40px;
 }
 
 #close:hover {
   cursor: pointer;
-  border-color: black;
-  box-shadow: 2px 2px 0px black;
-  background-color: #aedcae;
+  border-color: #eff0f2;
 }
 
 #side {
   right: 0;
   width: 250px;
-  background-color: #bee3ba;
+  background-color: #011638;
   position: fixed;
   z-index: 100000;
-  height: 65vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 1s;
+  transition: all 0.5s;
   visibility: hidden;
   transform: translate(100%);
   box-shadow: 10px 7px 10px rgb(0, 0, 0, 0.5);
   border-style: solid;
   border-width: 1px;
 }
+
+#side button {
+  margin: 10px;
+}
+
 @media screen and (max-width: 725px) {
   #navbar button {
     visibility: hidden;
   }
   #menu {
+    visibility: visible;
+  }
+  #navbar {
+    justify-content: center;
+  }
+  #side {
     visibility: visible;
   }
 }
