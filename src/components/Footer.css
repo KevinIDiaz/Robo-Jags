@@ -82,3 +82,9 @@
 #vex-logo {
   width: 50%;
 }
+
+@media screen and (max-width: 725px) {
+  #footer {
+    flex-direction: column;
+  }
+}
