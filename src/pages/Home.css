@@ -153,3 +153,8 @@
     height: 190px;
   }
 }
+@media screen and (max-width: 400px) {
+  #sponsors img {
+    height: 175px;
+  }
+}
