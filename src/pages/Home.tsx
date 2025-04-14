@@ -23,7 +23,7 @@ export function Home(){
           partialVisibilityGutter: 30
         },
         mobile: {
-          breakpoint: { max: 500, min: 0 },
+          breakpoint: { max: 575, min: 0 },
           items: 1,
           partialVisibilityGutter: 30
         }

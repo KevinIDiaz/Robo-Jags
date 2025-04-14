@@ -136,3 +136,20 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+  #sponsors img {
+    height: 225px;
+  }
+}
+@media screen and (max-width: 725px) {
+  #sponsors img {
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #sponsors img {
+    height: 190px;
+  }
+}
