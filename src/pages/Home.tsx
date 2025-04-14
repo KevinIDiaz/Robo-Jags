@@ -3,11 +3,10 @@ import video from "/roboJagBannerTest.mp4"
 import team from '/teamSymbol.svg'
 import award from '/awardSymbol.svg'
 import { Link } from "react-router-dom";
-import harley from '../assets/harleyDavidson.png'
 import group from '../assets/groupPic.jpeg'
 import Mc from '../assets/McD.png'
-import canes from '../assets/canes.jpg'
-import chick from '../assets/chick.jpg'
+import ramp from '../assets/ramp.png'
+
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -75,13 +74,15 @@ export function Home(){
                 infinite={true} 
                 autoPlay={true} 
                 showDots={true} 
-                centerMode={ true}
+                centerMode={ false}
                 pauseOnHover={true}
                 renderButtonGroupOutside={true}
                 focusOnSelect={true}
                 >
                     <div className="card"><a target="blank" href='https://maps.app.goo.gl/P9mcbExTV5oaYYFu7'><img src={Mc}/></a><p>- Rosa and Alexa -</p></div>
-                    
+                    <div className="card"><a target="blank" href='https://www.instagram.com/ramp_upmobiledieselrepair?igsh=a21tazM0dDdkMWZu'><img src={ramp}/></a></div>
+                    <div className="card"><a target="blank" href='https://maps.app.goo.gl/P9mcbExTV5oaYYFu7'><img src={Mc}/></a><p>- Rosa and Alexa -</p></div>
+                    <div className="card"><a target="blank" href='https://www.instagram.com/ramp_upmobiledieselrepair?igsh=a21tazM0dDdkMWZu'><img src={ramp}/></a></div>
                 </Carousel>
             </div>
         </div>
