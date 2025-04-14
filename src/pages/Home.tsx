@@ -54,7 +54,7 @@ export function Home(){
                     <div className='data'>
                         <img className='symbol' src={team}/>
                         <h3>6 TEAMS</h3>
-                        <p>- 77038V<br/>- 77038J<br/>- 77038D<br/>- 70738A<br/>- 70738J<br/>- 70738V</p>
+                        <p>77038V<br/>77038J<br/>77038D<br/>70738A<br/>70738J<br/>70738V</p>
                     </div>
                     <div className='data'>
                         <img className='symbol' src={award}/>
@@ -65,7 +65,7 @@ export function Home(){
 
             </div>
             <div id='sponsors'>
-                <h2>SPONSOR</h2>
+                <h2>SPONSORS</h2>
                 <Carousel 
                 containerClass="carousel-container" 
                 responsive={responsive} 

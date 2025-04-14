@@ -152,6 +152,19 @@
   #sponsors img {
     height: 190px;
   }
+  h2 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #highlights img {
+    height: 100px;
+  }
 }
 @media screen and (max-width: 400px) {
   #sponsors img {
