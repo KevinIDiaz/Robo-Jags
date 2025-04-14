@@ -36,12 +36,12 @@ function scrollFunction() {
     if (!navbar || !logo) return; // Exit function if navbar or logo is null
     if (window.scrollY > 40) {  // 'scrollY' is more reliable than 'scrollTop'
         navbar.style.backgroundColor = "#011638";
-        navbar.style.height = '13%';
+        navbar.style.height = '105px';
         logo.style.height = '90px';
        
     } else {
         navbar.style.backgroundColor = "transparent";
-        navbar.style.height = '20%';
+        navbar.style.height = '160px';
         logo.style.height = '125px';
         
     }

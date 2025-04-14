@@ -10,7 +10,7 @@
   background-color: transparent;
   display: flex;
   justify-content: space-evenly;
-  height: 20%;
+  height: 160px;
   align-items: center;
   position: fixed;
   z-index: 999;
