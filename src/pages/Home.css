@@ -155,7 +155,7 @@ h1 {
 @media screen and (max-width: 900px) {
   #overlay h1 {
     font-size: 115px;
-    padding-top: 50px;
+    padding-top: 25px;
   }
 }
 
