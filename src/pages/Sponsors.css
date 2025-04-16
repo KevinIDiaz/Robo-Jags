@@ -8,7 +8,11 @@
 
 .sponsors-page h2 {
   text-align: center;
+  width: 100%;
+  margin: 0 0;
+  padding: 0 0;
 }
+
 .sponsors-header h1 {
   color: #ffd858;
   font-size: 150px;
@@ -27,12 +31,15 @@
   color: #ccc;
   margin: 0 0;
   text-align: center;
+  padding: 0 0;
 }
 
 .sponsors-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .current-sponsors {
@@ -71,9 +78,17 @@
   font-size: 1.1rem;
 }
 
+.why-sponsor h2 {
+  text-align: center;
+  margin: 0 0;
+  padding: 0 0;
+}
+
 .why-sponsor p {
   margin: 0 0px;
   text-align: center;
+  padding: 0 0;
+  width: 100%;
 }
 
 .sponsorship-tiers {
@@ -81,7 +96,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 .tier {
@@ -139,7 +154,19 @@
 }
 
 .cta {
-  margin: 4rem 0 2rem;
+}
+
+.cta h2 {
+  text-align: center;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.cta p {
+  margin: 20px 0px;
+  text-align: center;
+  padding: 0 0;
+  width: 100%;
 }
 
 .sponsors-page .sponsor-button {
@@ -175,5 +202,10 @@
 @media screen and (max-width: 600px) {
   .sponsors-header h1 {
     font-size: 70px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sponsors-header h1 {
+    font-size: 60px;
   }
 }
