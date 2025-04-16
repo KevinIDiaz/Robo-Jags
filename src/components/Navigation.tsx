@@ -14,7 +14,7 @@ export function Navigation(){
             <Link to="/"><img id='logo' src={logo}/></Link>
        
             <Link to="/About"><button>ABOUT</button></Link>
-            <button className='emphasize'>SPONSORS</button>
+            <Link to ="/Sponsors"><button className='emphasize'>SPONSORS</button></Link>
             <img onClick={showSide} id='menu'src={menu}/>
         
         </div>
@@ -23,7 +23,8 @@ export function Navigation(){
             <button >CONTACT</button>
            <button>GALLERY</button>
             <Link to="/About"><button>ABOUT</button></Link>
-            <button className='emphasize'>SPONSORS</button>
+            <Link to ="/Sponsors"><button className='emphasize'>SPONSORS</button></Link>
+            
         </div>
         </>
     )

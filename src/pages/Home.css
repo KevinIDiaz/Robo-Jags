@@ -129,6 +129,19 @@
 
 #sponsors img {
   height: 275px;
+  transition: transform 0.25s;
+}
+
+.card p {
+  transition: transform 0.25s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card:hover p {
+  transform: scale(1.05);
 }
 
 .carousel-container {
