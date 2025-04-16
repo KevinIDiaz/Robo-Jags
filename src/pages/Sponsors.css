@@ -6,13 +6,16 @@
   text-align: center;
 }
 
+.sponsors-page h2 {
+  text-align: center;
+}
 .sponsors-header h1 {
   color: #ffd858;
   font-size: 150px;
   margin-bottom: 10px;
   text-shadow: none;
   -webkit-text-stroke: 3px #c39604;
-  text-shadow: 8px 10px 100px #efc330;
+  text-shadow: 8px 10px 70px #efc330;
   text-align: center;
   margin-left: 0px;
   margin-right: 0px;
@@ -22,6 +25,8 @@
 .sponsors-header p {
   font-size: 25px;
   color: #ccc;
+  margin: 0 0;
+  text-align: center;
 }
 
 .sponsors-header {
@@ -66,6 +71,11 @@
   font-size: 1.1rem;
 }
 
+.why-sponsor p {
+  margin: 0 0px;
+  text-align: center;
+}
+
 .sponsorship-tiers {
   display: flex;
   flex-wrap: wrap;
@@ -77,8 +87,8 @@
 .tier {
   background-color: #1c2340;
   border-radius: 10px;
-  padding: 2rem;
-  width: 250px;
+  padding: 40px 15px;
+  width: 260px;
   transition: transform 0.3s, box-shadow 0.3s;
   animation: fadeInUp 1s ease;
 }
@@ -102,9 +112,9 @@
 }
 
 .tier ul {
-  list-style: none;
+  list-style: square;
   padding: 0;
-  margin: 0;
+  margin: 0 20px;
 }
 
 .tier ul li {
