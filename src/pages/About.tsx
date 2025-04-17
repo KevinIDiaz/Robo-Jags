@@ -1,5 +1,4 @@
 import "./About.css";
-import { Link } from "react-router-dom";
 import video from '/robotics vid.mp4';
 
 export function About() {
