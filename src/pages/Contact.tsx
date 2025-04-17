@@ -17,13 +17,14 @@ export function Contact() {
         ).then((result) => {
             alert("Message sent successfully!");
             console.log(result.text);
+            const formElement = e.target as HTMLFormElement;
+            formElement.reset();
             form.current?.reset(); // ✅ Safely call reset on the form
         }, (error) => {
             alert("Oops! Something went wrong.");
             console.log(error.text);
         });
 
-        e.target.reset();
     };
 
     return (
