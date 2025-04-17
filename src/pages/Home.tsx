@@ -38,7 +38,7 @@ export function Home(){
                 </div>
                 <div id='overlay'>
                     <h1>ROBO JAGS</h1>
-                    <button className='button'>SUPPORT OUR TEAMS!</button>
+                    <Link to='/Sponsors'><button className='button'>SUPPORT OUR TEAMS!</button></Link>
                 </div>
             </div>
             

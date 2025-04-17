@@ -82,6 +82,13 @@
 #vex-logo {
   width: 50%;
 }
+.link {
+  color: #eff0f2;
+  text-decoration: none;
+}
+.link:hover {
+  color: #eff0f2b5;
+}
 
 @media screen and (max-width: 725px) {
   #footer {

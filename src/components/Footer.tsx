@@ -1,6 +1,7 @@
 import "./Footer.css"
 import logo from "/Robojags Logo.png"
 import vex from '/vexLogo.png'
+import { Link } from "react-router-dom";
 
 export function Footer(){
     return(
@@ -14,8 +15,8 @@ export function Footer(){
                 <ul>
                     <li>Contact</li>
                     <li>Gallery</li>
-                    <li>About</li>
-                    <li>Sponsors</li>
+                    <Link className="link" to='/About'><li>About</li></Link>
+                    <Link className="link" to='/Sponsors'><li>Sponsors</li></Link>
                 </ul>
             </div>
             <div id='team-links'>
