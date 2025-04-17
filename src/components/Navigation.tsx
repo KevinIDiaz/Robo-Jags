@@ -9,7 +9,7 @@ export function Navigation(){
         <>
         <div id='navbar'>
        
-           <button >CONTACT</button>
+        <Link to="/Contact"><button >CONTACT</button></Link>
            <button>GALLERY</button>
             <Link to="/"><img id='logo' src={logo}/></Link>
        
@@ -20,7 +20,7 @@ export function Navigation(){
         </div>
         <div id='side'>
             <img onClick={hideSide} id='close' src={close}/>
-            <button >CONTACT</button>
+            <Link to ="/Contact"><button >CONTACT</button></Link>
            <button>GALLERY</button>
             <Link to="/About"><button>ABOUT</button></Link>
             <Link to ="/Sponsors"><button className='emphasize'>SPONSORS</button></Link>

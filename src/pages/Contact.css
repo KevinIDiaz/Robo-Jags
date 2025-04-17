@@ -1,0 +1,104 @@
+.contact-page {
+  padding: 3rem 2rem;
+  background-color: #010c1e;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#contact {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  font-size: 75px;
+  color: #eff0f2;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-info,
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  color: #011638;
+  margin-bottom: 1rem;
+}
+
+.contact-info p,
+.contact-info a {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #011638;
+  font-weight: bold;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #011638;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color transform 0.5s ease;
+}
+
+.contact-form button:hover {
+  background-color: #023e8a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
