@@ -13,7 +13,7 @@ export function Footer(){
             </div>
             <div id='nav-links'>
                 <ul>
-                    <li>Contact</li>
+                <Link className="link" to='/About'><li>Contact</li></Link>
                     <li>Gallery</li>
                     <Link className="link" to='/About'><li>About</li></Link>
                     <Link className="link" to='/Sponsors'><li>Sponsors</li></Link>
@@ -31,7 +31,7 @@ export function Footer(){
                 </ul>
             </div>
             <div id='vex-logo-container'>
-                <img id='vex-logo' src={vex}/>
+                <a target="blank" href='https://www.vexrobotics.com/'><img id='vex-logo' src={vex}/></a>
 
             </div>
             
