@@ -37,18 +37,19 @@ export function About() {
                 <h2>MEET THE TEAMS</h2>
                 <div id="teams-container">
                     {[
-                        { name: "Voltage", number: "77038V", insta:"https://www.instagram.com/77038_voltage?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="},
-                        { name: "Nova", number: "70738A" , insta: 'https://www.instagram.com/_nova_70738_a?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='},
-                        { name: "RoboDuckz", number: "77038J", insta:"https://www.instagram.com/roboduckz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
-                        { number: "77038D" , insta:"https://www.instagram.com/blansonrobotics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="},
-                        { number: "70738J" , insta:'https://www.instagram.com/blansonrobotics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='},
-                        { number: "70738V", insta:"https://www.instagram.com/robojags_70738v?igsh=ejdhc2RmZXppbjFx" }
+                        { name: "Voltage", number: "77038V" },
+                        { name: "Nova", number: "70738A" },
+                        { name: "RoboDuckz", number: "77038J" },
+                        { number: "77038D" },
+                        { number: "70738J" },
+                        { number: "70738V" }
                     ].map((team, index) => (
                         <div key={index} className="team-card">
                             <img src={`/Robo-Jags/${team.number}.jpg`} alt={`Team ${team.number}`} className="team-img"/>
                             <h3>{team.name ? `${team.name} (${team.number})` : team.number}</h3>
-                                <a target="blank" href={team.insta}><button className="button">LEARN MORE</button></a>
-                        
+                            <Link to={`/teams/${team.number}`}>
+                                <button className="button">LEARN MORE</button>
+                            </Link>
                         </div>
                         
                     ))}
