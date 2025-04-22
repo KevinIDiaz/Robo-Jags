@@ -13,7 +13,7 @@ export function Footer(){
             </div>
             <div id='nav-links'>
                 <ul>
-                    <li>Contact</li>
+                    <Link className="link" to='/Contact'><li>Contact</li></Link>
                     <li>Gallery</li>
                     <Link className="link" to='/About'><li>About</li></Link>
                     <Link className="link" to='/Sponsors'><li>Sponsors</li></Link>
