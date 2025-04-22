@@ -31,7 +31,7 @@ export function Footer(){
                 </ul>
             </div>
             <div id='vex-logo-container'>
-                <img id='vex-logo' src={vex}/>
+                <a target="blank" href='https://www.vexrobotics.com/'><img id='vex-logo' src={vex}/></a>
 
             </div>
             

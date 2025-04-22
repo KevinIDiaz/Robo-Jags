@@ -79,8 +79,11 @@
   align-items: center;
   width: auto;
 }
-#vex-logo {
+#vex-logo-container a {
   width: 50%;
+}
+#vex-logo {
+  width: 100%;
 }
 .link {
   color: #eff0f2;
