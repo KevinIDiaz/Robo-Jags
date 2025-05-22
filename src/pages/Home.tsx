@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import group from '../assets/groupPic.jpeg'
 import Mc from '../assets/McD.png'
 import ramp from '../assets/ramp.png'
+import ismael from '../assets/ismael.jpeg'
 
 
 import Carousel from 'react-multi-carousel';
@@ -81,9 +82,8 @@ export function Home(){
                 >
                     <div className="card"><a target="blank" href='https://maps.app.goo.gl/P9mcbExTV5oaYYFu7'><img src={Mc}/></a><p>- Rosa and Alexa -</p></div>
                     <div className="card"><a target="blank" href='https://www.instagram.com/ramp_upmobiledieselrepair?igsh=a21tazM0dDdkMWZu'><img src={ramp}/></a></div>
-                    <div className="card"><a target="blank" href='https://maps.app.goo.gl/P9mcbExTV5oaYYFu7'><img src={Mc}/></a><p>- Rosa and Alexa -</p></div>
-                    <div className="card"><a target="blank" href='https://www.instagram.com/ramp_upmobiledieselrepair?igsh=a21tazM0dDdkMWZu'><img src={ramp}/></a></div>
-                </Carousel>
+                    <div className="card"><a target="blank" href='https://www.linkedin.com/in/ismael-diaz-52a4ab30b/'><img src={ismael}/></a><p>- Ismael Diaz -</p></div>
+                   </Carousel>
             </div>
         </div>
     )

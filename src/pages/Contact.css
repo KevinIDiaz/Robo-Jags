@@ -28,6 +28,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   flex: 1 1 300px;
   max-width: 500px;
+  height: fit-content;
 }
 
 .contact-info h2,
@@ -54,6 +55,8 @@
 
 .social-links {
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .social-links a {
@@ -100,5 +103,15 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-container h2 {
+    font-size: 40px;
+  }
+  .contact-container p,
+  .contact-info a {
+    font-size: 13px;
   }
 }

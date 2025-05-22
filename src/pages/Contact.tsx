@@ -35,8 +35,8 @@ export function Contact() {
                 <div className="contact-info">
                     <h2>Get In Touch</h2>
                     <p><strong>Email:</strong> <a href="mailto:jhvalentin@aldineisd.org">jhvalentin@aldineisd.org</a></p>
-                    <p><strong>Phone:</strong> </p>
-                    <p><strong>Location:</strong> Blanson CTE High School<br/>Houston, TX</p>
+                    <p><strong>Phone:</strong> <a href='tel: +12814369391'>281-436-9391</a> </p>
+                    <p><strong>Location:</strong> <a href='https://maps.app.goo.gl/K5K2StucYECrEeFt7'>Blanson CTE High School, Houston, TX</a></p>
 
                     <div className="social-links">
                         <a href="https://www.instagram.com/blansonrobotics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram</a>
