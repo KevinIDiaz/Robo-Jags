@@ -109,6 +109,7 @@
 @media screen and (max-width: 500px) {
   .contact-container h2 {
     font-size: 40px;
+    text-align: center;
   }
   .contact-container p,
   .contact-info a {
