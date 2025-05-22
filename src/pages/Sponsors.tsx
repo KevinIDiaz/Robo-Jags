@@ -1,6 +1,7 @@
 import "./Sponsors.css";
 import Mc from '../assets/McD.png'
 import ramp from '../assets/ramp.png'
+import ismael from '../assets/ismael.jpeg'
 
 export function Sponsors() {
     return (
@@ -16,6 +17,7 @@ export function Sponsors() {
                     {/* Replace with actual logos or names */}
                     <div className="sponsor"><img src={Mc}/><p>- Rose & Alexa -</p></div>
                     <div className="sponsor"><img src={ramp}/></div>
+                    <div className="sponsor"><img src={ismael}/><p>- Ismael Diaz -</p></div>
                 </div>
             </section>
 
