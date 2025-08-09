@@ -1,0 +1,74 @@
+.resources-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background-color: #0a0f2c;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.resources-page h1 {
+    text-align: center;
+    margin: 0 0px;
+    padding: 0 15px;
+}
+
+.carousel-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.thumbnail-image {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail-image:hover {
+  border-color: #555;
+}
+
+.active-thumbnail {
+  border-color: #007BFF; /* Blue border for active thumbnail */
+}
+
+.download-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
