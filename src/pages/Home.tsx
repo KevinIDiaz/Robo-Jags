@@ -75,7 +75,7 @@ export function Home(){
                 infinite={true} 
                 autoPlay={true} 
                 showDots={true} 
-                centerMode={ false}
+                centerMode={false}
                 pauseOnHover={true}
                 renderButtonGroupOutside={true}
                 focusOnSelect={true}
