@@ -1,6 +1,6 @@
 import "./Resources.css";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, ComponentRef } from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -11,9 +11,11 @@ const responsive = {
 };
 
 export function Resources() {
-    const carouselRef = useRef(null);
+    type CarouselRefType = ComponentRef<typeof Carousel>;
+    const carouselRef = useRef<CarouselRefType>(null);
+
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [images, setImages] = useState([]);
+    const [images, setImages] = useState<string[]>([]);
 
     // Load all slide images dynamically
     useEffect(() => {
@@ -23,7 +25,7 @@ export function Resources() {
         const totalSlides = 9; // Change this if you add more slides
         const imgs = [];
         for (let i = 1; i <= totalSlides; i++) {
-            imgs.push("/slides/slide${i}.png");
+            imgs.push('/slides/slide${i}.png');
         }
         setImages(imgs);
     }, []);
@@ -53,7 +55,7 @@ export function Resources() {
                     key={i}
                     src={thumb}
                     alt={`Thumbnail ${i + 1}`}
-                    onClick={() => carouselRef.current.goToSlide(i)}
+                    onClick={() => carouselRef.current?.goToSlide(i)}
                     className={`thumbnail-image ${i === currentSlide ? "active-thumbnail" : ""}`}
                 />
                 ))}
