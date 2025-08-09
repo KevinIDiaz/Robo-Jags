@@ -1,6 +1,6 @@
 import "./Resources.css";
 
-import React, { useRef, useState, useEffect, ComponentRef } from "react";
+import _, { useRef, useState, useEffect, ComponentRef } from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -37,7 +37,7 @@ export function Resources() {
                 responsive={responsive}
                 showDots={false}
                 arrows={true}
-                afterChange={(prevSlide: number, { currentSlide }: { currentSlide: number }) =>
+                afterChange={(_: number, { currentSlide }: { currentSlide: number }) =>
                 setCurrentSlide(currentSlide)
                 }
                 infinite
