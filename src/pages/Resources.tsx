@@ -31,41 +31,55 @@ export function Resources() {
     }, []);
 
     return (
-        <div className="carousel-wrapper">
-            <Carousel
-                ref={carouselRef}
-                responsive={responsive}
-                showDots={false}
-                arrows={true}
-                afterChange={(_: number, { currentSlide }: { currentSlide: number }) =>
-                setCurrentSlide(currentSlide)
-                }
-                infinite
-            >
-                {images.map((img, i) => (
-                <div key={i} className="carousel-slide">
-                    <img src={img} alt={`Slide ${i + 1}`} className="carousel-image" />
+        <div className="resources-page">
+            <div className="resources-header">
+                <h1>VEX Resources</h1>
+                <p>"Filler"</p>
+            </div>
+
+            <div className="resources-content">
+                <h2>Explore Our Resources</h2>
+                <p>"Filler content goes here."</p>
+            </div>
+
+            <section className="resources-carousel">
+                <div className="carousel-wrapper">
+                    <Carousel
+                        ref={carouselRef}
+                        responsive={responsive}
+                        showDots={false}
+                        arrows={true}
+                        afterChange={(_: number, { currentSlide }: { currentSlide: number }) =>
+                        setCurrentSlide(currentSlide)
+                        }
+                        infinite
+                    >
+                        {images.map((img, i) => (
+                        <div key={i} className="carousel-slide">
+                            <img src={img} alt={`Slide ${i + 1}`} className="carousel-image" />
+                        </div>
+                        ))}
+                    </Carousel>
+
+                    <div className="thumbnail-container">
+                        {images.map((thumb, i) => (
+                        <img
+                            key={i}
+                            src={thumb}
+                            alt={`Thumbnail ${i + 1}`}
+                            onClick={() => carouselRef.current?.goToSlide(i)}
+                            className={`thumbnail-image ${i === currentSlide ? "active-thumbnail" : ""}`}
+                        />
+                        ))}
+                    </div>
+
+                    <div className="download-button-container">
+                        <a href="/presentation.pdf" download className="download-button">
+                            Download Presentation
+                        </a>
+                    </div>
                 </div>
-                ))}
-            </Carousel>
-
-            <div className="thumbnail-container">
-                {images.map((thumb, i) => (
-                <img
-                    key={i}
-                    src={thumb}
-                    alt={`Thumbnail ${i + 1}`}
-                    onClick={() => carouselRef.current?.goToSlide(i)}
-                    className={`thumbnail-image ${i === currentSlide ? "active-thumbnail" : ""}`}
-                />
-                ))}
-            </div>
-
-            <div className="download-button-container">
-                <a href="/presentation.pdf" download className="download-button">
-                    Download Presentation
-                </a>
-            </div>
+            </section>
         </div>
     );
 }

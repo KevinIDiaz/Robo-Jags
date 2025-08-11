@@ -12,6 +12,19 @@
     padding: 0 15px;
 }
 
+.resources-header h1 {
+    color: #ffd858;
+    font-size: 150px;
+    margin-bottom: 10px;
+    text-shadow: none;
+    -webkit-text-stroke: 3px #c39604;
+    text-shadow: 8px 10px 70px #efc330;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
 .carousel-wrapper {
   max-width: 800px;
   margin: 0 auto;
