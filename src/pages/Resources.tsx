@@ -13,10 +13,13 @@ const responsive = {
 export function Resources() {
     type CarouselRefType = ComponentRef<typeof Carousel>;
     const carouselRef = useRef<CarouselRefType>(null);
-
+    
     const [currentSlide, setCurrentSlide] = useState(0);
     const [images, setImages] = useState<string[]>([]);
-
+        // Adjust for react-multi-carousel clones in infinite mode
+        const cloneCount = 3;
+        const adjustedIndex = ((currentSlide - cloneCount + images.length) % images.length);
+    
     // Load all slide images dynamically
     useEffect(() => {
         // Manually list files here if needed OR fetch them from public folder
@@ -25,47 +28,56 @@ export function Resources() {
         const totalSlides = 9; // Change this if you add more slides
         const imgs = [];
         for (let i = 1; i <= totalSlides; i++) {
-            imgs.push('/slides/slide${i}.png');
+            imgs.push(`/slides/slide${i}.png`);
         }
         setImages(imgs);
     }, []);
 
     return (
-        <div className="carousel-wrapper">
-            <Carousel
-                ref={carouselRef}
-                responsive={responsive}
-                showDots={false}
-                arrows={true}
-                afterChange={(_: number, { currentSlide }: { currentSlide: number }) =>
-                setCurrentSlide(currentSlide)
-                }
-                infinite
-            >
-                {images.map((img, i) => (
-                <div key={i} className="carousel-slide">
-                    <img src={img} alt={`Slide ${i + 1}`} className="carousel-image" />
+        <div className="resources-page">
+            <div className="resources-header">
+                <h1>VEX Resources</h1>
+                <p>Explore our resources to learn more about our team and projects.</p>
+            </div>
+
+            <section className="resources-content">
+                <p>Here you can find a variety of resources related to VEX Robotics.</p>
+
+                <div className="carousel-wrapper">
+                    <Carousel
+                        ref={carouselRef}
+                        responsive={responsive}
+                        showDots={false}
+                        arrows={true}
+                        afterChange={(_, state) => setCurrentSlide(state.currentSlide)}
+                        infinite
+                    >
+                    {images.map((img, i) => (
+                    <div key={i} className="carousel-slide">
+                        <img src={img} alt={`Slide ${i + 1}`} className="carousel-image" />
+                    </div>
+                    ))}
+                    </Carousel>
+
+                    <div className="thumbnail-container">
+                        {images.map((thumb, i) => (
+                            <img
+                            key={i}
+                            src={thumb}
+                            alt={`Thumbnail ${i + 1}`}
+                            onClick={() => carouselRef.current?.goToSlide(i)}
+                                className={`thumbnail-image ${i === adjustedIndex ? "active-thumbnail" : ""}`}
+                        />
+                        ))}
+                    </div>
+
+                    <div className="download-button-container">
+                        <a href="/Blanson Robotics.pdf" download className="download-button">
+                            Download Presentation
+                        </a>
+                    </div>
                 </div>
-                ))}
-            </Carousel>
-
-            <div className="thumbnail-container">
-                {images.map((thumb, i) => (
-                <img
-                    key={i}
-                    src={thumb}
-                    alt={`Thumbnail ${i + 1}`}
-                    onClick={() => carouselRef.current?.goToSlide(i)}
-                    className={`thumbnail-image ${i === currentSlide ? "active-thumbnail" : ""}`}
-                />
-                ))}
-            </div>
-
-            <div className="download-button-container">
-                <a href="/presentation.pdf" download className="download-button">
-                    Download Presentation
-                </a>
-            </div>
+            </section>
         </div>
     );
 }
