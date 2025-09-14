@@ -18,16 +18,16 @@ export function Sponsors() {
     type CarouselRefType = ComponentRef<typeof Carousel>;
     const carouselRef = useRef<CarouselRefType>(null);
     // Tracks which image is currently shown (carousel index)
-    const [, setCurrentSlide] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0);
     // Holds all image paths
     const [images, setImages] = useState<string[]>([]);
     // Number of clones react-multi-carousel uses for infinite mode (default is 3 for single item)
-    // const cloneCount = 3;
+    const cloneCount = 3;
     // Adjust index for thumbnail highlight
-    // let adjustedIndex = ((currentSlide - cloneCount + 1 + images.length) % images.length);
+    let adjustedIndex = ((currentSlide - cloneCount + 1 + images.length) % images.length);
 
     // To remove thumbnails, uncomment this line, otherwise, leave it commented out
-    // adjustedIndex = 0;
+    adjustedIndex = 0;
 
     // Load all slide images dynamically from public/slides
     useEffect(() => {
@@ -109,45 +109,46 @@ export function Sponsors() {
             <section className="cta">
                 <h2>Become a Sponsor</h2>
                 <p>Support our team and help us build the future of robotics!</p>
-                <section className="resources-content">
-                    <p>Here you can find a variety of resources related to VEX Robotics.</p>
-    
-                    <div className="carousel-wrapper">
-                        {/* React Multi Carousel for advanced features */}
-                        <Carousel
-                            ref={carouselRef}
-                            responsive={responsive}
-                            showDots={false}
-                            arrows={true}
-                            afterChange={(_, state) => setCurrentSlide(state.currentSlide)}
-                            infinite
-                        >
-                            {images.map((img, i) => (
-                                <div key={i} className="carousel-slide">
-                                    <img src={img} alt={`Slide ${i + 1}`} className="carousel-image"/>
-                                </div>
-                            ))}
-                        </Carousel>
-    
-                        {/* Thumbnails for direct selection
-                        <div className="thumbnail-container">
-                            {images.map((thumb, i) => (
-                                <img
-                                    key={i}
-                                    src={thumb}
-                                    alt={`Thumbnail ${i + 1}`}
-                                    onClick={() => carouselRef.current?.goToSlide(i)}
-                                    className={`thumbnail-image ${i === adjustedIndex ? "active-thumbnail" : ""}`}
-                                />
-                            ))}
-                        </div> */}
-                    </div>
-                </section>
+            </section>
+            
+            <section className="sponsors-content">
+                <p>Here you can find a variety of resources related to VEX Robotics.</p>
 
-                {/* Download button */}
+                <div className="carousel-wrapper">
+                    {/* React Multi Carousel for advanced features */}
+                    <Carousel
+                        ref={carouselRef}
+                        responsive={responsive}
+                        showDots={false}
+                        arrows={true}
+                        afterChange={(_, state) => setCurrentSlide(state.currentSlide)}
+                        infinite
+                    >
+                        {images.map((img, i) => (
+                            <div key={i} className="carousel-slide">
+                                <img src={img} alt={`Slide ${i + 1}`} className="carousel-image"/>
+                            </div>
+                        ))}
+                    </Carousel>
+
+                    {/* Thumbnails for direct selection
+                    <div className="thumbnail-container">
+                        {images.map((thumb, i) => (
+                            <img
+                                key={i}
+                                src={thumb}
+                                alt={`Thumbnail ${i + 1}`}
+                                onClick={() => carouselRef.current?.goToSlide(i)}
+                                className={`thumbnail-image ${i === adjustedIndex ? "active-thumbnail" : ""}`}
+                            />
+                        ))}
+                    </div> */}
+
+                    {/* Download button */}
                     <div className="download-button-container">
                         <a href="/Blanson Robotics.pdf" download className="sponsor-button">Download Sponsorship Info</a>
                     </div>
+                </div>
             </section>
         </div>
     );
