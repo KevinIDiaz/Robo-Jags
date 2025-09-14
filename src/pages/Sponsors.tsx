@@ -24,7 +24,10 @@ export function Sponsors() {
     // Number of clones react-multi-carousel uses for infinite mode (default is 3 for single item)
     const cloneCount = 3;
     // Adjust index for thumbnail highlight
-    const adjustedIndex = ((currentSlide - cloneCount + 1 + images.length) % images.length);
+    let adjustedIndex = ((currentSlide - cloneCount + 1 + images.length) % images.length);
+
+    // To remove thumbnails, uncomment this line, otherwise, leave it commented out
+    adjustedIndex = 0;
 
     // Load all slide images dynamically from public/slides
     useEffect(() => {
