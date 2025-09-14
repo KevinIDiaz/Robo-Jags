@@ -76,9 +76,7 @@ export function Resources() {
 
                     {/* Download button */}
                     <div className="download-button-container">
-                        <a href="/Blanson Robotics.pdf" download className="download-button">
-                            Download Presentation
-                        </a>
+                        <a href="/Blanson Robotics.pdf" download className="download-button">Download Presentation</a>
                     </div>
                 </div>
             </section>
