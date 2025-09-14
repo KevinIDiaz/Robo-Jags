@@ -41,10 +41,11 @@ export function About() {
                         { name: "RoboDuckz", number: "77038J", instagram:'https://www.instagram.com/roboduckz?igsh=MWpsZ2t3MzE0ajBydQ==' },
                         { number: "77038D", instagram:'https://www.instagram.com/blansonrobotics?igsh=b28wamlmOG0xMHNx' },
                         { number: "70738J", instagram:'https://www.instagram.com/blansonrobotics?igsh=b28wamlmOG0xMHNx' },
-                        { number: "70738V", instagram:'https://www.instagram.com/robojags_70738v?igsh=OGx0Z3F6ZHppODJ1'}
+                        { number: "70738V", instagram:'https://www.instagram.com/blansonrobotics?igsh=b28wamlmOG0xMHNx'}
+                        // Original Link: https://www.instagram.com/robojags_70738v?igsh=OGx0Z3F6ZHppODJ1
                     ].map((team, index) => (
                         <div key={index} className="team-card">
-                            <img src={`/Robo-Jags/${team.number}.jpg`} alt={`Team ${team.number}`} className="team-img"/>
+                            {/* <img src={`/Robo-Jags/${team.number}.jpg`} alt={`Team ${team.number}`} className="team-img"/> */}
                             <h3>{team.name ? `${team.name} (${team.number})` : team.number}</h3>
                             <a target="blank" href={team.instagram}>
                                 <button className="button">LEARN MORE</button>
