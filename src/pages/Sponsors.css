@@ -186,19 +186,73 @@
   padding: 0 15px;
 }
 
+.carousel-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  text-align: center;
+}
+
+.react-multiple-carousel__arrow {
+  position: absolute !important; /* keep arrows inside the carousel */
+  z-index: 1 !important;         /* keep them above carousel images but not the navbar */
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 15px; /* adjust padding from left */
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 15px; /* adjust padding from right */
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.thumbnail-image {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail-image:hover {
+  border-color: #555;
+}
+
+.active-thumbnail {
+  border-color: #007BFF; /* Blue border for active thumbnail */
+}
+
 .sponsors-page .sponsor-button {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: #4caf50;
+  background-color: #53ac56; /*#4caf50*/
   color: white;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .sponsors-page .sponsor-button:hover {
-  background-color: #45a049;
+  background-color: #328136; /* #45a049 */
 }
 
 @media screen and (max-width: 1080px) {
