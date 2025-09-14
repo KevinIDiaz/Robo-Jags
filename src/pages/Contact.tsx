@@ -62,15 +62,14 @@ export function Contact() {
                 </div>
             </div>
             <iframe 
-    title="Blanson Map"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2398.738355511079!2d-95.42092548171776!3d29.913911247090542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c9b22d69006b%3A0x8461d46c156bbed2!2sBlanson%20CTE%20Senior%20High%20School!5e0!3m2!1sen!2sus!4v1744904056983!5m2!1sen!2sus"
-    width="100%" 
-    height="300" 
-    style={{ border: 0, marginTop: '2rem', borderRadius: '8px' }}
-    allowFullScreen={true} 
-    loading="lazy"
-></iframe>
-
+                title="Blanson Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2398.738355511079!2d-95.42092548171776!3d29.913911247090542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c9b22d69006b%3A0x8461d46c156bbed2!2sBlanson%20CTE%20Senior%20High%20School!5e0!3m2!1sen!2sus!4v1744904056983!5m2!1sen!2sus"
+                width="100%" 
+                height="300" 
+                style={{ border: 0, marginTop: '2rem', borderRadius: '8px' }}
+                allowFullScreen={true} 
+                loading="lazy"
+            ></iframe>
         </div>
     );
 }
