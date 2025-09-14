@@ -34,6 +34,19 @@
   text-align: center;
 }
 
+.react-multiple-carousel__arrow {
+  position: absolute !important; /* keep arrows inside the carousel */
+  z-index: 1 !important;         /* keep them above carousel images but not the navbar */
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 15px; /* adjust padding from left */
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 15px; /* adjust padding from right */
+}
+
 .carousel-image {
   width: 100%;
   border-radius: 8px;
