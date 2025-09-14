@@ -18,16 +18,16 @@ export function Sponsors() {
     type CarouselRefType = ComponentRef<typeof Carousel>;
     const carouselRef = useRef<CarouselRefType>(null);
     // Tracks which image is currently shown (carousel index)
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [, setCurrentSlide] = useState(0);
     // Holds all image paths
     const [images, setImages] = useState<string[]>([]);
     // Number of clones react-multi-carousel uses for infinite mode (default is 3 for single item)
-    const cloneCount = 3;
+    // const cloneCount = 3;
     // Adjust index for thumbnail highlight
-    let adjustedIndex = ((currentSlide - cloneCount + 1 + images.length) % images.length);
+    // let adjustedIndex = ((currentSlide - cloneCount + 1 + images.length) % images.length);
 
     // To remove thumbnails, uncomment this line, otherwise, leave it commented out
-    adjustedIndex = 0;
+    // adjustedIndex = 0;
 
     // Load all slide images dynamically from public/slides
     useEffect(() => {
